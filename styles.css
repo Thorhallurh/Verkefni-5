@@ -15,18 +15,43 @@ html {
   line-height: 1.25;
 }
 
-.card__header {
-  font-size: 1.5rem;
-  line-height: 1;
+.cards {
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .card {
   background-color: #fff;
-  border: 2px;
+  border: 2px solid #aaa;
+  border-radius: 0.3125rem; /*5px*/
+  max-width: 29.375rem; /*470px*/
+  max-height: 20rem; /*320px*/
+  margin-bottom: 0.625; /*10px*/
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.card__header {
+  font-size: 1.5rem;
+  line-height: 1;
+  display: flex;
+}
+
+.card__photo {
+  width: 9.375rem; /*150px*/
+  padding-right: 1.25rem; /*20px*/
+  display: flex;
+}
+
+.card__text {
+  display: flex;
+  flex-direction: column;
 }
 
 main {
   margin: 0 auto;
-  max-width: 1500px;
-  padding: 20px;
+  max-width: 1500px; /*á að breyta þessu í rem?*/
+  padding: 20px; /*á að breyta þessu í rem?*/
 }
